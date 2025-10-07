@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        h1 {
+            position: absolute;
+            top: 7%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        div#container {
+            overflow-x: auto;     /* Deixa a tabela respansiva para dispositivos móveis */
+        }                         /* A tabela cria um "scroll" de rolagem */
+        table {
+            width: 500px;
+            border-collapse: collapse; /* Gruda as linhas e colunas da tabela */
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+        caption {
+            border: 1px solid black;
+            background-color: black;
+            color: whitesmoke;
+            vertical-align: middle;
+            padding: 5px;
+            font-weight: bolder;
+        }
+        th {
+            background-color: lightblue;
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+            padding: 5px;
+        }
+        td {
+            width: 500px;
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center; /* left, center, right */
+            /*vertical-align = alinharia de maneira vertical (top, middle, bottom) */
+        }
+        tbody > tr:nth-child(2n) { /* Efeito Zebrado na tabela - 2n = na 2ª linha pinte de lightgray */
+            background-color: lightgray;
+        }
+        tfoot {
+            background-color: gray;
+            border: 1px solid gray;
+            color: black;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <div id="container">
+        <table>
+
+            <!-- 
+            Dentro de uma tabela eu tenho as seguintes sintaxes:
+            caption (legenda/título da tabela)
+            thead
+                th (título), td (coluna), tr (linha)
+            tbody
+                th td, tr
+            tfoot
+                th td, tr
+            -->
+
+            <caption>Título da Tabela</caption>
+            <thead>
+                <tr> 
+                    <th scope="col">Estado</th>
+                    <th scope="col">População</th>
+                    <th scope="col">Cidades</th>
+            </thead>
+            <tbody>
+                <tr> <!--primeira linha da tabela -->
+                    <td>São Paulo</td> <!--primeira coluna da tabela -->
+                    <td>X Habitantes</td>
+                    <td>X Cidades</td>
+                </tr>    
+                <tr> 
+                    <td>Minas Gerais</td> 
+                    <td>X Habitantes</td>
+                    <td>X Cidades</td>
+                </tr>    
+                <tr> 
+                    <td>Rio de Janeiro</td> 
+                    <td>X Habitantes</td>
+                    <td>X Cidades</td>
+                </tr>    
+                    <td>Espírito Santo</td> 
+                    <td>X Habitantes</td>
+                    <td>X Cidades</td>
+                </tr>    
+                </tr>    
+                    <td>Rio Grande do Sul</td> 
+                    <td>X Habitantes</td>
+                    <td>X Cidades</td>
+                </tr>    
+                </tr>    
+                    <td>Paraná</td> 
+                    <td>X Habitantes</td>
+                    <td>X Cidades</td>
+                </tr>    
+                </tr>    
+                    <td>Amazonas</td> 
+                    <td>X Habitantes</td>
+                    <td>X Cidades</td>
+                </tr>    
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Rodapé</td> <!-- mesclei 3 colunas com "colspan"-->
+                    <!-- já o rowspan mesclaria 3 linhas (no caso) se necessário-->
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    
+</body>
+</html>

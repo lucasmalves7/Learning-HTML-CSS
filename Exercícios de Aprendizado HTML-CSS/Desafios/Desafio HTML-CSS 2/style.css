@@ -1,0 +1,106 @@
+@charset "utf-8";
+/*
+    id em HTML é declarado com "#" no arquivo CSS (só pode 1 elemento)
+    class em HTML é declarado com "." no arquivo CSS (pode vários elementos)
+
+    Hierarquia:
+    # = id
+    . = class
+    : = pseudo-class
+    :: = pseudo-element
+    > = children
+*/
+body {
+    background-color: antiquewhite;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+h1#principal {
+    color: brown;
+}
+
+h1#secundario {
+    color: gray;
+}
+
+h2#subPrincipal {
+    color: blueviolet;
+}
+
+.paragrafoX {
+    color: blue;
+}
+
+div {
+    display: inline-block; /* Todas as divs na mesma linha */
+    text-align: center;
+    background-color: lightseagreen;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+div:hover {     /* Ao passar o mouse, mudará a cor das divs */
+    background-color: tomato;
+}
+div#d4 {
+    display: center;
+    text-align: center;
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+
+}
+div#d4:hover > p {
+    color: green;
+    font-weight: bolder;
+}
+
+h2#subSecundario {
+    text-align: left;
+    color: blueviolet;
+}
+
+li {
+    text-align: left;
+}
+
+a {
+    color: violet;
+    text-decoration: none; /* Irá tirar o sublinhado do link */
+}
+
+a:hover {
+    text-decoration: underline; /* Irá atribuir o sublinhado do link ao passar o cursor do mouse */
+}
+
+a:active {
+    color: yellow; /* ao clicar ficará amarelo */
+}
+
+a:visited {
+    color: brown; /* ao visitar o site o link ficará marrom */
+}
+
+a::after {
+    content: ' (link)';
+    text-decoration: none;
+    color: yellowgreen;
+}
+
+nav {
+    background-color: gray;
+    box-shadow: 3px 3px;
+}
+
+footer {
+    background-color: salmon;
+    color: white;
+    border-radius: 10px 20px;
+    padding: 3px;
+}
+
+footer > p {
+    margin: 0px;
+}

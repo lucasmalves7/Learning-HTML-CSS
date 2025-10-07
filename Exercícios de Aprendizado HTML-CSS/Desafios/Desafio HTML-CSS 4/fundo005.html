@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem de Fundo</title>
+    <style>
+        body {
+            background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover; /* vai adaptar toda a imagem na tela, sobrepondo o plano de fundo "black"*/
+            background-attachment: fixed;
+            /*O padrão do "background-attachment" é o "scroll", que faz o fundo rolar conforme você desce a página.
+            Nesse caso, no entanto, o fundo é fixo, por tanto o fundo não irá rolar ao descer a página*/
+        
+            /* É possível fazer um shorthand para simplicar todos os comandos acima. 
+            Exemplo: Shorthand - background
+            color > image > position > repeat > [size] > attachment 
+            
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat cover fixed*/
+        }
+        main {
+            background-color: white;
+            max-width: 500px;       /* Largura do main adaptando-se ao tipo de tela */
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Imagem</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusamus ipsa facere ex voluptas fugiat dignissimos reiciendis eius minus, modi corporis ab autem, assumenda explicabo, consectetur possimus illo praesentium! Suscipit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusamus ipsa facere ex voluptas fugiat dignissimos reiciendis eius minus, modi corporis ab autem, assumenda explicabo, consectetur possimus illo praesentium! Suscipit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusamus ipsa facere ex voluptas fugiat dignissimos reiciendis eius minus, modi corporis ab autem, assumenda explicabo, consectetur possimus illo praesentium! Suscipit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusamus ipsa facere ex voluptas fugiat dignissimos reiciendis eius minus, modi corporis ab autem, assumenda explicabo, consectetur possimus illo praesentium! Suscipit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusamus ipsa facere ex voluptas fugiat dignissimos reiciendis eius minus, modi corporis ab autem, assumenda explicabo, consectetur possimus illo praesentium! Suscipit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusamus ipsa facere ex voluptas fugiat dignissimos reiciendis eius minus, modi corporis ab autem, assumenda explicabo, consectetur possimus illo praesentium! Suscipit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusamus ipsa facere ex voluptas fugiat dignissimos reiciendis eius minus, modi corporis ab autem, assumenda explicabo, consectetur possimus illo praesentium! Suscipit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusamus ipsa facere ex voluptas fugiat dignissimos reiciendis eius minus, modi corporis ab autem, assumenda explicabo, consectetur possimus illo praesentium! Suscipit!</p>
+    </main>
+    
+</body>
+</html>

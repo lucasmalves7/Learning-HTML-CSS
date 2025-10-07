@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Em Nome do Fogo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Cinzel', serif;
+    }
+
+    body {
+      background: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .tela {
+      display: none;
+      width: 100%;
+      height: 90vh;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .ativa {
+      display: flex;
+    }
+
+    h1.titulo {
+        color: darkred;
+    }
+    h2.mensagem {
+        color: #3b2f1c;
+        margin-bottom: 15px;
+    }
+
+    .botao-entrar {
+      padding: 15px 40px;
+      font-size: 24px;
+      background-color: #c9b27c;
+      border: 4px solid #5e4b2c;
+      color: #2e2413;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+      transition: transform 0.2s;
+    }
+
+    .botao-entrar:hover {
+      transform: scale(1.05);
+    }
+
+    .folha-livro {
+      width: 60%;
+      height: 80%;
+      background: url('https://i.imgur.com/nQUfZQv.png') no-repeat center center;
+      background-size: cover;
+      padding: 40px;
+      border: 6px solid #5c4426;
+      box-shadow: 0 0 30px rgba(0,0,0,0.6);
+      overflow-y: auto;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Tela 1: Botão de entrada -->
+  <div id="tela1" class="tela ativa">
+    <h1 class="titulo">Em Nome do Fogo</h1>
+    <h3>Livro 1</h3>
+    <h2 class="mensagem">As Terras do Poente o aguardam...</h2>
+    <button class="botao-entrar" onclick="entrar()">Entrar</button>
+  </div>
+
+  <!-- Tela 2: Folha de livro -->
+  <div id="tela2" class="tela">
+    <div class="folha-livro">
+      <h2>Capítulo I</h2>
+      <p>
+        Em tempos antigos, quando os reinos eram divididos por espadas e juramentos, um guerreiro solitário caminhava entre ruínas esquecidas e sussurros do passado...
+      </p>
+      <!-- Você pode adicionar mais conteúdo aqui -->
+    </div>
+  </div>
+
+  <script>
+    function entrar() {
+      document.getElementById('tela1').classList.remove('ativa');
+      document.getElementById('tela2').classList.add('ativa');
+    }
+  </script>
+
+</body>
+</html>

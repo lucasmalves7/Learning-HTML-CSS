@@ -1,0 +1,32 @@
+
+* { /* */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* De cima pra baixo (to bottom) o degradê */
+    background-image: linear-gradient(to bottom, aqua, blue, darkblue);
+    /* Mesmo que tenha rolagem na página o degradê não irá ficar zoado */
+    background-attachment: fixed;
+}
+
+main {
+    background-color:ivory;
+    border-radius: 10px;                /* As bordas ficaram curvas */
+    box-shadow: 5px 5px 15px black;   /* Centralizou o main */
+    padding: 10px;                      /* colocou sombra na caixa do main */
+    width: 600px;                       /* largura do main */
+    margin: auto;                       /* Centralizou a caixa do main */
+}
+
+h1 {
+    color: orange;
+    text-align: center;
+    text-shadow: 1px 1px 2px brown;
+}
+
+h2 {
+    color:darkblue;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}

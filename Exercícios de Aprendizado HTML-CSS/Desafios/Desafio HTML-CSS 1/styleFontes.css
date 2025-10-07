@@ -1,0 +1,49 @@
+/* Importado do Google Fonts (necessário modificar o font-family após importação,
+conforme feito neste exemplo): */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Daruma'; /* Eu que escolhi o nome. Linkarei no h2 abaixo. */
+    src: url('fonts/DarumadropOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+    /* Tipos de format:
+    - opentype (otf)
+    - truetype (ttf)
+    - embedded-opentype
+    - truetype-aat (Apple Advanced Typography)
+    -svg
+    */
+}
+
+body {
+    /* Da esquerda para direita */
+    background-image: linear-gradient(to right, rgb(211, 28, 28), blue);
+    font-family: "Merriweather", serif;
+    /*Medidas absolutas:
+    cm, mm, in, px, pt, pc
+    Medidas Relativas:
+    em, ex, rem, vw, vh, %
+    Recomendação:
+    Usar sempre "px" e "em"*/
+    font-size: 1em; /* Geralmente é o padrão dos navegadores e equivale a 16px */
+    font-weight: normal; /* É o peso da fonte */
+    /* font-weight: border = Negrito */
+    /* font-weight: 100 - 900 = nível de intensidade fino ao grosso */
+    font-style: italic;
+    text-decoration: underline;  /* sublinhado */
+
+    /* Shorthad font (simplificar os parâmetros das fontes acima
+    para isso é necessário preencher os campos na ordem correta:
+    font-style -> font-weight -> font-size -> font-family*/
+    font: italic normal 1em 'Merriweather';
+
+
+}
+
+h2 {
+    font-family: 'Daruma';
+    font-size: 3em;
+    font-weight: normal;
+}

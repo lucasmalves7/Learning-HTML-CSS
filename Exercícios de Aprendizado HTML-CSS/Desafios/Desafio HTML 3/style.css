@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body {
+    background-color: darkslategrey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+}
+
+h3 {
+    text-align: center;
+    color: aliceblue;
+}
+
+div {
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+}
+
+video {
+    width: 560px;
+    height: 315px;
+}
+
+img#botao-voltar {
+    width: 50px;
+    height: 50px;
+}

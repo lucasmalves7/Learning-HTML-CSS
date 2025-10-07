@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container {
+            position: relative; /*por padrão, todo posicionamento de um box é relativo, por tanto esse comando não é necessário */
+            padding: 10px;
+            height: 500px;
+            background-image: url('imagens/target001.png'); /*Essa imagem é transparente, por isso não interfere na cor do background */
+            background-size: 100% 100%;
+            background-color: purple;
+        }
+        #conteudo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /*Ao definir a posição do elemento como abosluta, pode-se utilizar top e left para alinhar o elemento em relação ao todo.*/
+            transform: translate(-50%, -50%);
+            /* o transform translate permitirá centralizar o elemento em relação ao outro elemento com base nos parâmetros acima:width: 
+            se top é 50, então no translate precisa ser -50% e o mesmo com o left.*/
+            height: 200px;
+            width: 400px;
+            margin: auto;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
